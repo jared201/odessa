@@ -1,5 +1,5 @@
 .jumbotron {
-  background: #532F8C;
+  background: #b9a87812;
   color: white;
   padding-bottom: 80px; }
   .jumbotron .btn-primary {
@@ -25,3 +25,8 @@
     .jumbotron .lang-logo img {
       max-width: 100%; }
 
+
+      .input.is-larger,
+      .textarea.is-large {
+        font-size: 3.5rem;
+      }
