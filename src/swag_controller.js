@@ -3,10 +3,10 @@
 exports.processAll = function (symbol, callback){
 
     const swag = require ('./src/swag_module');
-    const smaData = 0;
-    const emaData = 0;
-    const psar = 0;
-    const mfi = 0;
+    let smaData = 0;
+    let emaData = 0;
+    let psar = 0;
+    let mfi = 0;
     let stockInfo = {};
     stockInfo.symbol = symbol;
     stockInfo.closePrice = 0; //coming from PSE API
@@ -27,7 +27,7 @@ exports.processAll = function (symbol, callback){
     if (smaData > emaData){
       if (stockInfo.closePrice < psar){
         if (mfi < 0.2){
-           /*TODO call the nodemailer to send user that this stock has a
+           /*TODO call the nodemailer to send email/SMS that this stock has a
              good setup for a BUY*/
         }
       }
