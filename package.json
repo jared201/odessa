@@ -14,8 +14,10 @@
     "bulma": "^0.7.1",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
+    "mongodb": "^3.1.1",
     "nodemailer": "^4.6.7",
-    "sass": "^1.10.1"
+    "sass": "^1.10.1",
+    "semantic-ui": "^2.3.3"
   },
   "devDependencies": {
     "request": "^2.81.0",

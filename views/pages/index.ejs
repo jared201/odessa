@@ -14,7 +14,7 @@
     <h1>Let's Get it On!</h1>
     <div class="field">
   <div class="control">
-    <input class="input is-larger is-rounded" type="text" placeholder="Enter a stock or crypto symbol">
+    <input class="input is-larger is-rounded" id='stock' type="text" placeholder="Enter a stock or crypto symbol">
   </div>
     <p>Enter a stock or publicly or a cryptocurrency and receive email recommendation free (for a limited 5 tries), unlimited queries for $100/month</p>
     <div class="control">
@@ -25,7 +25,23 @@
 <div>
   <p></p>
 <div class="container">
-  <a class="button is-large is-rounded is-fullwidth">SUBMIT</a>
+  <a class="button is-large is-rounded is-fullwidth" onclick="submitStock()">SUBMIT</a>
+  <div class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Thank you for submitting!</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        Thank you for using our service, please check your email for our response
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Ok</button>
+        <button class="button" onclick="submitStock()">Cancel</button>
+      </footer>
+    </div>
+  </div>
 
   <hr>
   <div class="row">
@@ -41,23 +57,7 @@
     </div>
     <div class="col-md-6">
       <h3><span class="glyphicon glyphicon-link"></span> Next Steps</h3>
-      <!-- <ul>
-        <li>If you are following the <a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs">Getting Started</a> guide, then please head back to the tutorial and follow the next steps!</li>
-        <li>If you deployed this app by deploying the Heroku Button, then in a command line shell, run:</li>
-        <ul>
-          <li><code>git clone https://github.com/heroku/node-js-getting-started.git</code> - this will create a local copy of the source code for the app</li>
-          <li><code>cd node-js-getting-started</code> - change directory into the local source code repository</li>
-          <li><code>heroku git:remote -a &lt;your-app-name></code> - associate the Heroku app with the repository</li>
-          <li>You'll now be set up to run the app locally, or <a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs#push-local-changes">deploy changes</a> to Heroku</li>
-        </ul>
-      </ul> -->
-      <!-- <h3><span class="glyphicon glyphicon-link"></span> Helpful Links</h3> -->
-      <!-- <ul>
-        <li><a href="https://www.heroku.com/home">Heroku</a></li>
-        <li><a href="https://devcenter.heroku.com/">Heroku Dev Center</a></li>
-        <li><a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs">Getting Started with Node on Heroku</a></li>
-        <li><a href="https://devcenter.heroku.com/articles/deploying-nodejs">Deploying Node Apps on Heroku</a></li>
-      </ul> -->
+
     </div>
   </div> <!-- row -->
    <!-- <div class="alert alert-info text-center" role="alert">
@@ -65,6 +65,6 @@
   </div> -->
 </div>
 
-
+<script src="js/actions.js" type="text/x-javascript"></script>
 </body>
 </html>
