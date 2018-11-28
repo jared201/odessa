@@ -3,7 +3,7 @@ function submitStock() {
 }
 
 $(document).ready(() => {
-    $('.button').click(function(){
+    $('button').click(function(){
         $('button').toggleClass('active');
         $('.title').toggleClass('active');
         $('nav').toggleClass('active');
