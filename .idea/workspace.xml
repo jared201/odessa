@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aad63227-468b-4d84-91ba-248859cf14d6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/index.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/material-dashboard/CHANGELOG.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/material-dashboard/ISSUE_TEMPLATE.md" beforeDir="false" />
@@ -242,7 +241,6 @@
       <change beforePath="$PROJECT_DIR$/material-dashboard/gulpfile.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/material-dashboard/package.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/material-dashboard/template.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -478,16 +476,15 @@
       <updated>1543366469375</updated>
       <workItem from="1543366470954" duration="1416000" />
       <workItem from="1543380295133" duration="1763000" />
-      <workItem from="1554003325026" duration="3741000" />
+      <workItem from="1554003325026" duration="4807000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10639000" />
+    <option name="totallyTimeSpent" value="11705000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="709" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2494043" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
