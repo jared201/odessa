@@ -4,11 +4,12 @@ const PORT = process.env.PORT || 5000
 let sass = require('sass');
 
 express()
-  .use(express.static(path.join(__dirname, '/')))
-  .set('views', path.join(__dirname, '/'))
+  .use(express.static(path.join(__dirname, 'views')))
+    .use(express.static(path.join(__dirname, 'public')))
+  .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
-  .get('/', (req, res) => res.render('index.ejs'))
-
+  .get('/', (req, res) => res.render('login.ejs'))
+    .get('/dashboard', (req, res) => res.render('index.ejs'))
   .listen(PORT, () => console.log(`Listening on ${ PORT }`));
 
 // sass.render({file: '/dist/css/styles.scss'}, function(err, result) {
