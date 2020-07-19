@@ -9,7 +9,7 @@ express()
     .use(express.static(path.join(__dirname, 'examples')))
   .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
-  .get('/', (req, res) => res.render('login.ejs'))
+  .get('/', (req, res) => res.render('index.ejs'))
     .get('/dashboard', (req, res) => res.render('index.ejs'))
   .listen(PORT, () => console.log(`Listening on ${ PORT }`));
 
