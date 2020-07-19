@@ -6,6 +6,7 @@ let sass = require('sass');
 express()
   .use(express.static(path.join(__dirname, 'views')))
     .use(express.static(path.join(__dirname, 'public')))
+    .use(express.static(path.join(__dirname, 'examples')))
   .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
   .get('/', (req, res) => res.render('login.ejs'))
