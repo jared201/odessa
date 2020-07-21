@@ -9,7 +9,30 @@
           </button>
         </div>
         <div class="modal-body">
-          ...
+            <form>
+                <div class="form-group">
+                   <label for="contractNameInput" >Contract Name</label>
+                   <input type="text" class="form-control" id="contractNameInput" placeholder="(e.g. US Presidential Election 2020)">
+                   <span class="bmd-help">Contract Name is required</span>
+                </div>
+                <div class="form-group">
+                    <label for="contractCode">Contract Code</label>
+                    <input type="text" class="form-control" id="contractCode" placeholder="(e.g. USP2020)">
+                  </div>                
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">To ensure payment, must be your Paypal Email</small>
+                </div>
+                <div class="form-group">
+                    <label for="expiryDate">Expiration Date</label>
+                    <input type="text" class="form-control datepicker" id="expiryDate" >
+                    <span class="bmd-help">Expiration Date must a future date</span>
+                  </div>                
+                
+              
+                
+              </form>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
